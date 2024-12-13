@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "486467055538",
+    "project_id": "base-proyecto-kevin",
+    "storage_bucket": "base-proyecto-kevin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486467055538:android:c6bce3ca192f97f0037eab",
+        "android_client_info": {
+          "package_name": "com.kevin.aplicacionkev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtYUdtkuySM2KQuKH4wZO5megY9Bt8l8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,44 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "com.google.gms.google-services" // FlutterFire Configuration
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.aplicacion_kevin" // Cambiar si tu ID de paquete es diferente
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    defaultConfig {
+        applicationId "com.example.aplicacion_kevin" // Cambiar si tu ID de paquete es diferente
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode flutter.versionCode
+        versionName flutter.versionName
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.1.0') // BOM de Firebase
+    implementation 'com.google.firebase:firebase-analytics' // Ejemplo, agregar más si es necesario
+}
